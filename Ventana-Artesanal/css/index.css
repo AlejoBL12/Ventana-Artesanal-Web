@@ -1,4 +1,4 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navegación */
+/* Navegación 
 header{
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ header{
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* gap: 5rem; */
+  /* gap: 5rem; x
   height: 5rem;
 }
 
@@ -36,6 +36,13 @@ nav{
   display: flex;
   gap: 10rem;
   background-color: #470606;
+}
+
+nav i{
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2rem;
 }
 
 nav a{

@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  
+body {
+    font-family: "Concert One", sans-serif;
+    line-height: 1.6;
+}
+  
+  /* Navegación */
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu{
+    background-color: #470606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* gap: 5rem; */
+    height: 5rem;
+}
+
+.menu img{
+    width: 6rem;
+    transform: translateX(-20vh);
+}
+
+nav{
+    display: flex;
+    gap: 10rem;
+    background-color: #470606;
+}
+  
+nav i{
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2rem;
+}
+  
+nav a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .4s ease;
+}
+  
+nav a:hover{
+    color: rgba(189, 84, 84, 0.774);
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color:  #470606;
+}
+  
+footer a{
+  color: #fff;
+  text-decoration: none;
+}  
