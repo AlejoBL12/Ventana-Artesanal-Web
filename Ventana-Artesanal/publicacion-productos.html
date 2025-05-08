@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Publicion de productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="menu">
+        <img src="img/Logo.png">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categoria.html">Categoría</a>
+            <a href="publicacionproducto.html">Publicar</a>
+            <a href="login.html"><img src="img/login.png" alt=""></a>
+            <i class="fa-solid fa-circle-user"></i>
+        </nav>
+    </div>
+
+    
+        <form action="index.html" method="get" class="formulario" enctype="multipart/form-data">
+
+            <div class="grid-container">
+
+                <label for="nombre">Nombre: <span>*</span></label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+        
+                <label for="descripcion">Descripción: <span>*</span></label>
+                <textarea name="descripcion" id="descripcion" required></textarea><br><br>
+        
+                <label for="categoria">Categoría: <span>*</span></label>
+                <select name="categoria" id="categoria" required>
+                    <option value="arte">Arte</option>
+                    <option value="musica">Música</option>
+                    <option value="deporte">Deporte</option>
+                </select><br><br>
+        
+                <label for="precio">Precio: <span>*</span></label>
+                <input type="number" name="precio" id="precio" placeholder=""><br><br>
+            </div>
+
+                <div class="grid-container">
+
+                    <label for="imagen">Imagen: <span>*</span></label>
+                    <input id="uploadImage1" type="file" name="images[1]" onchange="previewImage(1);" />
+
+                    <img id="uploadPreview1" alt="imagen del producto"/>
+
+                    <input type="submit" value="Subir" id="boton">
+
+                </div>
+        </form>    
+    
+        <footer>
+            <p>@ 2025 Ventana Artesanal. Todos los derechos reservados.</p>
+            <p><i class="fas fa-envelope"></i> Correo: <a href="mailto:contacto@ventanaartesanal.com"></i> contacto@ventanaartesanal.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> Telefono: 123456789</p>
+            <p><i class="fa-solid fa-street-view"></i> Direccion: Calle falsa 123</p>
+        </footer>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
