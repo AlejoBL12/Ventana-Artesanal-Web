@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Publicion de productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="menu">
+        <img src="img/Logo.png">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categoria.html">Categoría</a>
+            <a href="publicacionproducto.html">Publicar</a>
+            <a href="login.html"><img src="img/login.png" alt=""></a>
+            <i class="fa-solid fa-circle-user"></i>
+        </nav>
+    </div>
+
+    
+        <form action="index.html" method="get" class="formulario" enctype="multipart/form-data">
+
+            <div class="grid-container">
+
+                <label for="nombre">Nombre: <span>*</span></label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+        
+                <label for="descripcion">Descripción: <span>*</span></label>
+                <textarea name="descripcion" id="descripcion" required></textarea><br><br>
+        
+                <label for="categoria">Categoría: <span>*</span></label>
+                <select name="categoria" id="categoria" required>
+                    <option value="arte">Arte</option>
+                    <option value="musica">Música</option>
+                    <option value="deporte">Deporte</option>
+                </select><br><br>
+        
+                <label for="precio">Precio: <span>*</span></label>
+                <input type="number" name="precio" id="precio" placeholder=""><br><br>
+            </div>
+
+                <div class="grid-container">
+
+                    <label for="imagen">Imagen: <span>*</span></label>
+                    <input id="uploadImage1" type="file" name="images[1]" onchange="previewImage(1);" />
+
+                    <img id="uploadPreview1" alt="imagen del producto"/>
+
+                    <input type="submit" value="Subir" id="boton">
+
+                </div>
+        </form>    
+    
+        <footer class="footer">
+            <!-- Sección 1: Logo y redes sociales -->
+            <div class="footer-section">
+                <img  class="company-logo" src="img/Logo.png">
+              
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                  
+            </div>
+        
+            <!-- Sección 2: Datos de contacto -->
+            <div class="footer-section">
+              <h4>Contacto</h4>
+              <p>📞 Tel: +123 456 7890</p>
+              <p>✉ Email: consultas@tucultura.com</p>
+              <p>✉ Email: Marvima73@tucultura.com</p>
+            </div>
+        
+            <!-- Sección 3: Métodos de pago -->
+            <div class="footer-section">
+              <h4>Métodos de pago</h4>
+              <div class="payment-methods">
+                <img src="img/visa.png" alt="Visa" />
+                <img src="img/icons8-mastercard-48.png" alt="Mastercard" />
+                <img src="img/paypal.png" alt="PayPal" />
+              </div>
+            </div>
+        </footer>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>

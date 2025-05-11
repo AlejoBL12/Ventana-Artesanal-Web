@@ -1,0 +1,223 @@
+.categoria{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.categorias{
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+
+}
+
+.categorias:hover{
+  transform: translateY(20px);
+}
+
+.categorias:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 110%;
+  height: 0%;
+  
+  z-index: 2;
+  transition: 0,5s all;
+  opacity: 0;
+}
+
+.categorias:hover:before{
+  opacity: 1;
+}
+
+.categorias .info{
+  position: relative;
+  z-index: 3;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.categoria a{
+
+  color: #fff;
+}
+
+.categoria a:hover
+{
+ color: #470606;
+}
+.categorias:hover .info{
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 1;
+  transform: translateY(0px);
+  background: linear-gradient(to bottom, rgba(61, 65, 64, 0.274), rgba(0, 0, 0, 0.24));
+}
+
+.categoria img{
+  max-width: 65%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.categoria p{
+  color: #000000;
+  }
+
+h2{
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  gap: 2rem;
+  color: #470606;
+}
+
+/* las Columnas de las imagenes*/
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto p{
+  color: #000000;
+}
+
+/*Es el fondo de dondé esta la imagén*/
+.producto {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+
+ /*Al pasar el cursor se sube un poco o podemos usar el de escalado*/
+.producto:hover {
+  transform: translateY(30px);
+  transition: 0.5s all;
+  /* transform: scale(110%)*/
+}
+
+
+
+
+
+.producto img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  /* width: 600px;
+  height: 300px; */
+}
+
+button{
+  font-family: "Concert One", sans-serif;
+  padding: 15px 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  width: auto;
+  
+}
+
+button:hover{
+  background-color: rgb(145, 156, 156);
+}
+/* Esto es el slider */
+.banner{
+  width: 100%;
+ height: 450px;
+ overflow: hidden;
+}
+
+figure{
+  position: relative;
+  left: 0;
+  width: 400%;
+  animation: 30s slide infinite;
+}
+
+.slider{
+  position: relative;
+  width: 25%;
+  float: left;
+}
+
+.slider img{
+  width: 100%;
+  height: 550px;
+}
+
+
+@keyframes slide{
+  0%{
+      left:0;
+  }
+  10%{
+      left:0;
+  }
+  50%{
+      left:-100%;
+  }
+  95%{
+      left: -200%;
+  }
+ /* Hasta acá es el slider*/
+}
+
+/* Animación de scroll */
+@keyframes show {
+  from{
+      opacity: 0;
+      scale: 25%;
+  }
+
+  to{
+      opacity: 1;
+      scale: 100%;
+  }
+}
+
+.producto img{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.categoria img{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+/* hacer responsive */
+
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 100%;
+  }
+  nav {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  
+body {
+    font-family: "Concert One", sans-serif;
+    line-height: 1.6;
+}
+  
+  /* Navegación */
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu{
+    background-color: #470606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* gap: 5rem; */
+    height: 5rem;
+}
+
+.menu img{
+    width: 6rem;
+    transform: translateX(-20vh);
+}
+
+nav{
+    display: flex;
+    gap: 10rem;
+    background-color: #470606;
+}
+  
+nav i{
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2rem;
+}
+  
+nav a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .4s ease;
+}
+  
+nav a:hover{
+    color: rgba(189, 84, 84, 0.774);
+}
+
+footer{
+    background-color:  #470606;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+  
+
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .company-logo {
+    max-width: 150px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #fdd835;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-methods img:hover {
+    transform: scale(1.1);
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    color: #fdd835;
+  }
+  
+ p{
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+ }
