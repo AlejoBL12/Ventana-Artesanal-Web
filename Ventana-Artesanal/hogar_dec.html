@@ -12,6 +12,7 @@
     <title>Mesa y cocina</title>
     <link rel="stylesheet" href="css/categorias.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -20,15 +21,37 @@
         <nav>
             <a href="index.html">Inicio</a>
             <a href="categoria.html">Categoría</a>
-            <a href="publicacion-productos.html">Publicar</a>
-            <a href="login.html"><img src="img/login.png" alt=""></a>
-            <i class="fa-solid fa-circle-user"></i>
+            <a href="publicacion-productos.html">Publicar</a>     
         </nav>
+        
+
+        <ul class="login">
+            
+            <li><i class="fa-solid fa-circle-user"></i>
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="login.html">Cerrar sesión</a></li>
+                </ul>  
+            </li>
+              
+        </ul>
+
     </div>
-     <header>
-    </header>
+
     <div class="banner">
-        <img src="img/banner_foto2.jpg" alt="">
+        <figure>
+            <div class="slider">
+                <img src="img/Banner_foto1.jpg" alt="Cerámica artesanal" />
+            </div>
+
+            <div class="slider">
+                <img src="img/banner_foto2.jpg" alt="Cerámica artesanal" />
+            </div>
+
+            <div class="slider">
+                <img src="img/banner_img.jpg" alt="Cerámica artesanal" />
+            </div>
+        </figure>
     </div>
 
     <div class="container">
@@ -373,7 +396,37 @@
         </div>
     </div>
 
+    <br><br>
 
+    <footer class="footer">
+        <!-- Sección 1: Logo y redes sociales -->
+        <div class="footer-section">
+            <img  class="company-logo" src="img/Logo.png">   
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    
+        <!-- Sección 2: Datos de contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>📞 Tel: +123 456 7890</p>
+            <p>✉ Email: consultas@tucultura.com</p>
+            <p>✉ Email: Marvima73@tucultura.com</p>
+        </div>
+    
+        <!-- Sección 3: Métodos de pago -->
+        <div class="footer-section">
+            <h4>Métodos de pago</h4>
+            <div class="payment-methods">
+                <img src="img/visa.png" alt="Visa" />
+                <img src="img/icons8-mastercard-48.png" alt="Mastercard" />
+                <img src="img/paypal.png" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
 
 
 </body>

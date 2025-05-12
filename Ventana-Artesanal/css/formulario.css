@@ -2,17 +2,21 @@
 .formulario{
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-container { 
-    padding: 20px;
+    padding: 0 80px;
     justify-content: center;
     align-items: center;
 }
 
 .grid-container:first-child {
-    grid-column: span 2;
+    grid-column: span 1;
+}
+
+.grid-container:last-child {
+    grid-row: span 2;
 }
 
 
@@ -26,12 +30,14 @@
 .formulario select{
     width: 100%;
     padding: .7rem;
-    border: none;
+    border: solid 2px #ccc;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.248);
     border-radius: 20px;
     background-color: #f2f2f2;
     font-size: 1.2rem;
     font-family: "Concert One", sans-serif;
     color: rgba(0, 0, 0, 0.666);
+    
 }
 
 .formulario textarea{
@@ -67,10 +73,18 @@
 }
 
 #uploadPreview1{
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
     margin: 10px;
     border: 1px solid #ccc;
     padding: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
+
+/* responsive */
+
+@media screen and (max-width: 1080px) {
+    .formulario {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
