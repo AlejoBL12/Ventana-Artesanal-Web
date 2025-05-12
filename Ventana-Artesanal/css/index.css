@@ -112,9 +112,6 @@ h2{
 }
 
 
-
-
-
 .producto img {
   max-width: 40%;
   height: auto;
@@ -215,11 +212,16 @@ figure{
 
 /* hacer responsive */
 
-@media screen and (max-width: 1080px) {
-  .column {
+@media screen and (max-width: 600px) {
+  .categoria img {
     width: 100%;
   }
-  nav {
-    gap: 1rem;
+
+  .productos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  article img {
+    animation: none;
   }
 }
