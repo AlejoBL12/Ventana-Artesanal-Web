@@ -6,18 +6,40 @@ function previewImage(nb) {
     };     
 }
 
+
+function previewImage(index) {
+    const input = document.getElementById('uploadImage' + index);
+    const preview = document.getElementById('uploadPreview' + index);
+
+    const file = input.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            preview.src = e.target.result; // Mostrar preview en la misma página
+            // Guardar la imagen base64 en localStorage
+            localStorage.setItem('imagenProducto', e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }
+}
+
+
 const parametros = new URLSearchParams(window.location.search);
 const nombre = parametros.get('nombre');
 const descripcion = parametros.get('descripcion');
 const categoria = parametros.get('categoria');
 const precio = parametros.get('precio');
-const imagen = parametros.get('imagen');
+let imagen = parametros.get('imagen');
+
+if (!imagen) {
+    imagen = localStorage.getItem('imagenProducto');
+}
 
 const producto = document.getElementById('producto');
 producto.innerHTML = 
     `<div class="productos" id="productList">
         <article class="producto">
-            <img src="${imagen}"  />
+            <img src="${imagen}" alt="Imagen del producto"/>
             <h3>${nombre}</h3>
             <p>Categoría: ${categoria}</p>
             <p>Precio: $${precio}</p>
