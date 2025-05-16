@@ -56,6 +56,19 @@ select {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.248);
 }
 
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
 button[type="submit"] {
     width: 40%;
     padding: 12px;

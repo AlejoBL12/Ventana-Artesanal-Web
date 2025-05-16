@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Link de estilos  -->
-    <link rel="stylesheet" href="/Ventana-Artesanal/css/estilos_index.css">
-    <link rel="stylesheet" href="banner/navegacion.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Ventana artesanal</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -22,16 +23,31 @@
         <nav class="navegacion">
             <img class="logo" src="img/Logo.png" alt="">
             <ul class="items">
-                <li><a href="#" class="Activo">Home</a></li>
+                <li><a href="index.html" class="Activo">Home</a></li>
                 <li><a href="#sesion_categorias">Categorias</a></li>
-                <li><a href="#sesion_nosotroso">Nosotros</a></li>
-                <li><a href="publicacion-productos.html">Publicación</a></li>
+                <li><a href="#sesion_nosotros">Nosotros</a></li>
+                <li><a href="publicacion-productos.html">Publicación</a></li> 
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li> 
+
+                <ul class="menu-options">
+                    <li class="switch">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </li>
+                </ul> 
             </ul>
-            <div class="login">
-                <a href="login.html" class="user"> <i class='bx bxs-user'></i>Ingresar</a>
-                <a href="#">Registrarse</a>
-                <i class='bx bx-menu' id="menu-icon"></i> 
-            </div>
+            <ul class="login">        
+                <li><i class="fa-solid fa-circle-user"></i>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="login.html">Cerrar sesión</a></li>
+                    </ul> 
+                </li>           
+            </ul>
+
+            <i class='bx bx-menu' id="menu-icon"></i> 
+
         </nav>
     </header>
     <div class="slider_banner">
@@ -45,7 +61,7 @@
 
     <main class="container">
         <section id="sesion_categorias" class="categorias">
-            <h1 class="texto_categ">Categorías</h1>
+            <h1>Categorías</h1>
             <h4>Desde lo clásico hasta lo moderno, todo lo que buscas</h4>
             <div class="subcategoria">
                 <div class="img_moda">
@@ -78,13 +94,13 @@
 
         </section>
         <section class="sesion_productos">
-            <h1 class="texto_categ">Productos Destacados</h1>
+            <h1>Productos Destacados</h1>
             <h4>Descubre la belleza de lo hecho a mano con nuestra colección de productos artesanales
                 <br> elaborados con dedicación, creatividad y respeto por las tradiciones.
             </h4>
             <div class="subproductos">
                 <div class="contenido_producto">
-                    <img class="img_produc" src="img/gallina.png" alt="">
+                <img class="img_produc" src="img/Chivita.png" alt="">
 
                     <h3 class="titulo_produc">Nombre producto</h3>
                     <span>$ 200.000</span>
@@ -148,12 +164,10 @@
                 </div>
             </div>
             </div>
-
-
-
         </section>
+        
         <section class="publicidad">
-            <h1 class="galeria_text">Galeria De Imagenes</h1>
+            <h1 class="titulo_categoria">Galeria De Imagenes</h1>
             <div class="galeria-img">
                 <img src="img/gallery_2.jpg" alt="">
                 <img src="img/gallery_1.jpg" alt="">
@@ -164,14 +178,14 @@
             </div>
 
         </section>
-        <section id="sesion_nosotroso" class="nosotros">
+        <section id="sesion_nosotros" class="nosotros">
             <h1 class="texto_categ">¿Quiénes somos?</h1>
             <div class="contenido_nosotros">
                 <div class="img_nosotros">
                     <img src="img/logo_artesanal.png" alt="">
                 </div>
                 <div class="texto_nosotros">
-                    <h2 class="texto_nos">Donde las raíces crean y el mundo descubre</h2>
+                    <h2>Donde las raíces crean y el mundo descubre</h2>
                     <p>Somos una plataforma digital creada con el corazón para apoyar, visibilizar y fortalecer el
                         trabajo de emprendedores artesanales. Nuestra misión es construir un puente entre quienes crean
                         con sus manos y quienes valoran lo auténtico, lo hecho con pasión y lo que tiene historia.
@@ -192,39 +206,43 @@
         </section>
     </main>
 
-</body>
-<footer class="footer">
-    <!-- Sección 1: Logo y redes sociales -->
-    <div class="footer-section">
-        <img  class="company-logo" src="img/Logo.png">   
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    <footer class="footer">
+        <!-- Sección 1: Logo y redes sociales -->
+        <div class="footer-section">
+            <img  class="company-logo" src="img/Logo.png">
+            
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+                
         </div>
-    </div>
-
-    <!-- Sección 2: Datos de contacto -->
-    <div class="footer-section">
-        <h4>Contacto</h4>
-        <p>📞 Tel: +123 456 7890</p>
-        <p>✉ Email: consultas@tucultura.com</p>
-        <p>✉ Email: Marvima73@tucultura.com</p>
-    </div>
-
-    <!-- Sección 3: Métodos de pago -->
-    <div class="footer-section">
-        <h4>Métodos de pago</h4>
-        <div class="payment-methods">
+    
+        <!-- Sección 2: Datos de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📞 Tel: +123 456 7890</p>
+            <p>✉ Email: consultas@tucultura.com</p>
+            <p>✉ Email: Marvima73@tucultura.com</p>
+        </div>
+    
+        <!-- Sección 3: Métodos de pago -->
+        <div class="footer-section">
+            <h3>Métodos de pago</h3>
+            <div class="payment-methods">
             <img src="img/visa.png" alt="Visa" />
             <img src="img/icons8-mastercard-48.png" alt="Mastercard" />
             <img src="img/paypal.png" alt="PayPal" />
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+</body>
 
 <!-- CODIGO JAVASCRIPT -->
-
-<script src="/js/btn.navegacion.js"></script>
+ 
+<script src="js/main.js"></script>
 
 </html>

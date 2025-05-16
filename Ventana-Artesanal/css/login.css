@@ -51,6 +51,18 @@ input {
     box-shadow: 2px 4px 8px rgba(19, 19, 19, 0.248);
 }
 
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 button {
     display: block;
     padding: 10px;

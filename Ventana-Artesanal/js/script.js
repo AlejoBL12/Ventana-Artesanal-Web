@@ -37,13 +37,32 @@ if (!imagen) {
 
 const producto = document.getElementById('producto');
 producto.innerHTML = 
-    `<div class="productos" id="productList">
-        <article class="producto">
-            <img src="${imagen}" alt="Imagen del producto"/>
-            <h3>${nombre}</h3>
-            <p>Categoría: ${categoria}</p>
-            <p>Precio: $${precio}</p>
-            <botto><a href="index.html">Volver</a></botto>
-        </article>
-    </div>
-    <br><br>`;
+    `<h1>Tu Producto</h1>
+    <div class="subproductos">
+        <div class="contenido_producto">
+            <img class="img_produc" src="${imagen}" alt="">
+
+            <h3 class="titulo_produc">${nombre}</h3>
+            <span>$ ${precio}</span>
+            <div class="puntaje">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <a href="index.html" ><button class="btn_1">Volver</button></a>
+        </div>
+    </div>`;
+
+
+    //     `<div class="productos" id="productList">
+    //     <article class="producto">
+    //         <img src="${imagen}" alt="Imagen del producto"/>
+    //         <h3>${nombre}</h3>
+    //         <p>Categoría: ${categoria}</p>
+    //         <p>Precio: $${precio}</p>
+    //         <botto><a href="index.html">Volver</a></botto>
+    //     </article>
+    // </div>
+    // <br><br>`

@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente de google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!--Link de iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Hogar y Decoración</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/banner/navegacion.css">
-    <link rel="stylesheet" href="/estilos_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link de estilos  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categorias.css">
+    <title>Hogar y decoración</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -21,15 +23,30 @@
             <img class="logo" src="img/Logo.png" alt="">
             <ul class="items">
                 <li><a href="index.html" class="Activo">Home</a></li>
-                <li><a href="index.html#sesion_categorias">Categorias</a></li>
-                <li><a href="#sesion_nosotroso">Nosotros</a></li>
-                <li><a href="#">Publicación</a></li>
+                <li><a href="#sesion_categorias">Categorias</a></li>
+                <li><a href="#sesion_nosotros">Nosotros</a></li>
+                <li><a href="publicacion-productos.html">Publicación</a></li> 
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li> 
+
+                <ul class="menu-options">
+                    <li class="switch">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </li>
+                </ul> 
             </ul>
-            <div class="login">
-                <a href="#" class="user"> <i class='bx bxs-user'></i>Ingresar</a>
-                <a href="#">Registrarse</a>
-                <!-- <i class='bx bx-menu' id="menu-icon"></i> -->
-            </div>
+            <ul class="login">        
+                <li><i class="fa-solid fa-circle-user"></i>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="login.html">Cerrar sesión</a></li>
+                    </ul> 
+                </li>           
+            </ul>
+
+            <i class='bx bx-menu' id="menu-icon"></i> 
+
         </nav>
     </header>
 
@@ -375,9 +392,39 @@
         </div>
     </div>
 
-
+    <footer class="footer">
+        <!-- Sección 1: Logo y redes sociales -->
+        <div class="footer-section">
+            <img  class="company-logo" src="img/Logo.png">
+            
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+                
+        </div>
+    
+        <!-- Sección 2: Datos de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📞 Tel: +123 456 7890</p>
+            <p>✉ Email: consultas@tucultura.com</p>
+            <p>✉ Email: Marvima73@tucultura.com</p>
+        </div>
+    
+        <!-- Sección 3: Métodos de pago -->
+        <div class="footer-section">
+            <h3>Métodos de pago</h3>
+            <div class="payment-methods">
+            <img src="img/visa.png" alt="Visa" />
+            <img src="img/icons8-mastercard-48.png" alt="Mastercard" />
+            <img src="img/paypal.png" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
 
 
 </body>
-
+    <script src="js/main.js"></script>
 </html>
