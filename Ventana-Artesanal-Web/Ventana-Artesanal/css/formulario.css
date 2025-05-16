@@ -1,0 +1,108 @@
+/* diseño del formulario */
+main h1 {
+    font-family: "Milonga", serif;
+    text-align: center;
+    font-size: 45px;
+    padding: 40px 0 0 0;
+    color: rgb(45, 6, 6);
+}
+
+.formulario{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container { 
+    padding: 0 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container:first-child {
+    grid-column: span 1;
+}
+
+.grid-container:last-child {
+    grid-row: span 2;
+}
+
+
+.formulario label{
+    font-size: 1.2rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario textarea,
+.formulario select{
+    width: 100%;
+    padding: .7rem;
+    border: solid 2px #ccc;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.248);
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: "Concert One", sans-serif;
+    color: rgba(0, 0, 0, 0.666);
+    
+}
+
+.formulario textarea{
+    height: 100px;
+    resize: none;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6a2727ee;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.formulario input[type="file"]{
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.formulario span{
+    color: red;
+    font-size: 1rem;
+}
+
+#uploadPreview1{
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Modo oscuro */
+
+input[type="text"].active,
+input[type="number"].active,
+textarea.active,
+select.active {
+    background-color: #4f4f4f;
+    color: #fff
+}
+
+/* responsive */
+
+@media screen and (max-width: 1080px) {
+    .formulario {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

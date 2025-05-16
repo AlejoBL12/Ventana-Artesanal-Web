@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente de google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!--Link de iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link de estilos  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Publicación de productos</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+</head>
+<body>
+        <header>
+        <nav class="navegacion">
+            <img class="logo" src="img/Logo.png" alt="">
+            <ul class="items">
+                <li><a href="index.html" class="Activo">Home</a></li>
+                <li><a href="#sesion_categorias">Categorias</a></li>
+                <li><a href="#sesion_nosotros">Nosotros</a></li>
+                <li><a href="publicacion-productos.html">Publicación</a></li> 
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li> 
+
+                <ul class="menu-options">
+                    <li class="switch">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </li>
+                </ul> 
+            </ul>
+            <ul class="login">        
+                <li><i class="fa-solid fa-circle-user"></i>
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="login.html">Cerrar sesión</a></li>
+                    </ul> 
+                </li>           
+            </ul>
+
+            <i class='bx bx-menu' id="menu-icon"></i> 
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Publicar Producto</h1>
+    
+        <form action="mostrar-producto.html" method="get" class="formulario" enctype="multipart/form-data">
+
+            <div class="grid-container">
+
+                <label for="nombre">Nombre: <span>*</span></label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+
+                <label for="descripcion">Descripción: <span>*</span></label>
+                <textarea name="descripcion" id="descripcion" required></textarea><br><br>
+
+                <label for="categoria">Categoría: <span>*</span></label>
+                <select name="categoria" id="categoria" required>
+                    <option value="arte">Mesa y cocina</option>
+                    <option value="musica">Hogar y decoración</option>
+                    <option value="deporte">Moda y accesorios</option>
+                </select><br><br>
+        
+                <label for="precio">Precio: <span>*</span></label>
+                <input type="number" name="precio" id="precio" placeholder=""><br><br>
+            </div>
+
+            <div class="grid-container">
+                <label for="imagen">Imagen: <span>*</span></label>
+                <input id="uploadImage1" type="file" name="images[1]" onchange="previewImage(1);" />
+                <img id="uploadPreview1" alt="imagen del producto"/>
+                <input type="submit" value="Subir" id="boton">
+            </div>
+        </form>     
+    </main>
+  
+    
+    <footer class="footer">
+        <!-- Sección 1: Logo y redes sociales -->
+        <div class="footer-section">
+            <img  class="company-logo" src="img/Logo.png">
+            
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+                
+        </div>
+    
+        <!-- Sección 2: Datos de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📞 Tel: +123 456 7890</p>
+            <p>✉ Email: consultas@tucultura.com</p>
+            <p>✉ Email: Marvima73@tucultura.com</p>
+        </div>
+    
+        <!-- Sección 3: Métodos de pago -->
+        <div class="footer-section">
+            <h3>Métodos de pago</h3>
+            <div class="payment-methods">
+            <img src="img/visa.png" alt="Visa" />
+            <img src="img/icons8-mastercard-48.png" alt="Mastercard" />
+            <img src="img/paypal.png" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
+   
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
