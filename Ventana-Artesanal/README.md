@@ -120,16 +120,21 @@ delimita a las siguientes funcionalidades:
 -   El formulario debe incluir campos como: nombre del producto,
     categoría, precio, descripción e imagen.
 
+
+**Formulario de Registro**
+
+- El sistema debe capturar los datos del registro del vendedor y mostrar los datos
+  
+
 **Visualización de datos:**
 
 -   El sistema debe capturar los datos y guardarlos para luego subir y
     visualizar el producto ingresado
 
 
+**Implementación modo oscuro**
  
-  <br>
-  
-
+- Al presionar el icono se activa el modo oscuro
 
 
 
