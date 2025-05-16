@@ -283,6 +283,7 @@ color: white;
   .items {
     position: absolute;
     top: 10%;
+    padding: 20px;
     width: 270px;
     height: auto;
     background: #470606;
@@ -328,5 +329,9 @@ color: white;
     margin: 10px 0;
     padding: 4px 0;
     font-size: 1rem;
+  }
+  
+  .btn_1{
+    font-size: 10px;
   }
 }
